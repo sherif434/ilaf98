@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="title desc">
+  <title id="title">Planet Cafe &amp; Restaurant</title>
+  <desc id="desc">واجهة بصرية لكافيه ومطعم بلانت في سوهاج</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#10264c"/>
+      <stop offset="1" stop-color="#d7a85e"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="620" rx="40" fill="url(#bg)"/>
+  <circle cx="690" cy="165" r="145" fill="#fff" opacity=".12"/>
+  <circle cx="175" cy="470" r="190" fill="#fff" opacity=".08"/>
+  <path d="M120 420c180-115 480-115 660 0" fill="none" stroke="#fff" stroke-opacity=".16" stroke-width="18" stroke-linecap="round"/>
+  <text x="450" y="280" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="46" font-weight="700">Planet Cafe</text>
+  <text x="450" y="338" text-anchor="middle" fill="#f7ead3" font-family="Arial,sans-serif" font-size="26">Restaurant &amp; Cafe</text>
+  <text x="450" y="395" text-anchor="middle" fill="#fff" opacity=".82" font-family="Arial,sans-serif" font-size="19">Sohag</text>
+</svg>
