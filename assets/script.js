@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded",function(){
     yearElement.textContent=String(new Date().getFullYear());
   }
 
+  var reducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
   document.querySelectorAll('a[href^="#"]').forEach(function(link){
     link.addEventListener("click",function(event){
       var targetId=link.getAttribute("href");
@@ -13,9 +15,12 @@ document.addEventListener("DOMContentLoaded",function(){
       if(target){
         event.preventDefault();
         target.scrollIntoView({
-          behavior:window.matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",
+          behavior:reducedMotion?"auto":"smooth",
           block:"start"
         });
+        if(target.hasAttribute("tabindex")){
+          target.focus({preventScroll:true});
+        }
       }
     });
   });
